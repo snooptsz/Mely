@@ -1,0 +1,57 @@
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.mobileprovision
+*.credentials
+credentials.*
+secrets.*
+*.secret
+
+# Provider / deployment state
+.terraform/
+*.tfstate
+*.tfstate.*
+.wrangler/
+.cloudflare/
+.vercel/
+.netlify/
+.supabase/
+
+# Local / generated
+.DS_Store
+.idea/
+.vscode/
+node_modules/
+dist/
+build/
+coverage/
+.tmp/
+tmp/
+logs/
+*.log
+
+# Data and backups
+*.sqlite
+*.sqlite3
+*.db
+*.dump
+*.sql
+*.bak
+*.backup
+backups/
+exports/
+
+# Security-sensitive operational material
+*.kubeconfig
+kubeconfig
+.ssh/
+.gnupg/
+.npmrc
+.pypirc
