@@ -1,0 +1,4 @@
+Legacy installed APK compatibility rule:
+- legacy client accepts browser_path only when it begins /pair.html?
+- live API v13 returns /pair.html?compat=1#pairing_ref=...&pairing_proof=...
+- pairing_proof remains after # and therefore is not sent in the HTTP request query
