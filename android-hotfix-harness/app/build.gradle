@@ -1,0 +1,31 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'me.m3ly.hotfix'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'me.m3ly.hotfix'
+        minSdk 26
+        targetSdk 36
+        versionCode 1
+        versionName '0.1.2-hotfix-validation'
+        buildConfigField 'String', 'M3LY_API_BASE', '"https://sweclfuqpsbvcheqxfyh.supabase.co/functions/v1/m3ly-api"'
+        buildConfigField 'String', 'M3LY_DEVICE_LOGOUT_URL', '"https://sweclfuqpsbvcheqxfyh.supabase.co/functions/v1/m3ly-device-logout"'
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+        }
+    }
+
+    buildFeatures { buildConfig true }
+    lint { abortOnError true }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
