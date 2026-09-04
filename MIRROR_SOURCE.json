@@ -1,0 +1,9 @@
+{
+  "authority": "gitlab",
+  "authoritative_project": "m3ly/mely",
+  "authoritative_branch": "main",
+  "source_commit": "33d17083e16325b57ac1d5225af9fc2523260596",
+  "mirror_mode": "sanitised-public-subset",
+  "github_authoritative": false,
+  "production_deployments_from_github": false
+}
