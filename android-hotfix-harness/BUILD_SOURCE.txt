@@ -1,0 +1,3 @@
+GitLab authoritative release SHA: cad0dc04415bce904fe67e999f1a009d02c5ea1b
+Live m3ly-api compatibility deployment: version 13
+Live m3ly-device-logout deployment: version 1
