@@ -1,9 +1,8 @@
 name: M3LY Android hotfix validation
 
+# Evidence-only validation. Never run automatically on pushes: GitLab remains
+# canonical and routine M3LY development must not consume hosted CI usage.
 on:
-  push:
-    branches:
-      - build/android-cad0dc04
   workflow_dispatch:
 
 permissions:
@@ -17,7 +16,7 @@ jobs:
         shell: bash
         run: |
           python3 - <<'PY'
-          import base64, json, os, secrets, urllib.request, urllib.error
+          import base64, json, secrets, urllib.request
           ref = 'd_' + base64.urlsafe_b64encode(secrets.token_bytes(24)).decode().rstrip('=')
           secret = base64.urlsafe_b64encode(secrets.token_bytes(32)).decode().rstrip('=')
           body = json.dumps({'device_ref': ref, 'device_secret': secret, 'platform': 'android'}).encode()
