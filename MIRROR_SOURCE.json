@@ -2,7 +2,7 @@
   "authority": "gitlab",
   "authoritative_project": "m3ly/mely",
   "authoritative_branch": "main",
-  "source_commit": "714165442b2cee871b56e6e39fd68f50d44e07e0",
+  "source_commit": "c0c26b064248468806e75ee8de10ad87e2aa69ee",
   "mirror_mode": "sanitised-public-subset",
   "github_authoritative": false,
   "production_deployments_from_github": false
